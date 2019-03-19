@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+
+<body>
+
+  <h1>Star Collector!</h1>
+
+  <div id="instructions">
+
+    <p>You will be given a random number at the start of the game.</p>
+
+    <p>There are four crystals below. By clicking on a crystal you will ad a specific amout of points to your total
+      score.</p>
+
+    <p>You win the game by matching your total score to the given random number. You lose the game if your total score
+      goes above the random number.</p>
+
+    <p>The value of each crystal is hidden from you ntil you click on it.</p>
+
+    <p>Each time the game starts, the values of each crystal will be randomized.</p>
+
+  </div>
+
+
+  <img id="yellow-star" src="assets/images/yellow-star.png">
+  <img id="blue-star" src="assets/images/blue-star.gif">
+  <img id="black-star" src="assets/images/black-star.png">
+  <img id="red-star" src="assets/images/red-star.png">
+
+  <div id="random-num-section">
+    <p>Random Number:</p>
+    <div id="random-number"></div>
+  </div>
+
+  <div id="total-score-section">
+    <p>Your Score:</p>
+    <div id="total-score"></div>
+  </div>
+
+  <div id="wins-losses">
+    <p id="scoreboard">SCOREBOARD</p>
+    <p id = "wins-p" class="scores">Wins: <span id="wins-counter"></span></p>
+    <p id = "losses-p" class="scores">Losses: <span id="losses-counter"></span></p>
+</div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="assets/javascript/game.js" async defer></script>
+</body>
+
+</html>
